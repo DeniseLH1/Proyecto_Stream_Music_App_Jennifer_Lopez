@@ -17,13 +17,17 @@ body {
 
 .opciones,.buscar{
     display: flex;
-    align-items: center;
+    align-items:center;
     gap: 15px; /* Espaciado interno rápido */
 }
 .opciones nav {
     display: flex;
     gap: 10px;
 }
+.menu a:hover {
+    color: white;
+}
+
 .global-header {
     background-color: #19191a;
     display: flex;
@@ -58,7 +62,6 @@ body {
     width: 150px;
     max-width: 150px;
 }
-
 .fondo{
         width: 95%; 
         height: 15%;          
@@ -119,11 +122,29 @@ body {
     display: block;        /* Hace que todo el espacio sea clickeable */
 }
 .homerun{
-    color: #db1111;
+    color: #db1111c5;
 }
 .Back{
     color: #707070;
 }
+.versus{
+    color: #2a4b80;
+}
+.visualizate{
+    color: #19191a;
+}
 .divide{
     color: #0946a8e1;
+}
+.disco{
+    color: #c59e04;
+}
+.show{
+    color:#c2152099;
+}
+.recovery{
+    color: #497e62;
+}
+.soul{
+    color: #4f3b3b;
 }
