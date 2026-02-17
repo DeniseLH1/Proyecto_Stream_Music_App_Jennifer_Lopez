@@ -23,6 +23,7 @@
 .album-meta h1 {
     font-size: 2.5rem;
     margin: 20px 0 5px 0;
+    
 }
 
 .album-meta p {
@@ -86,27 +87,31 @@
 .t-title {
     font-weight: bold;
 }
-
+.link{
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit;        /* Hereda el color blanco/claro que ya tenías */
+    display: block; 
+}
 /* Barra de Reproducción Inferior */
 .player-bar {
     position: fixed;
     bottom: 0;
-    left: 0;
+    left: -50px;
     width: 100%;
-    height: 80px;
+    height: 8%;
     background-color: #2b3546;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 20px;
-    border-top: 1px solid #334155;
-    z-index: 100;
+    padding: 30px;
+    border-top: 1px solid #0f0908;
+    z-index: 1;
 }
 
 .progress-bar {
-    width: 300px;
+    width: 200px;
     height: 4px;
-    background-color: #334155;
+    background-color: #545557;
     margin-top: 10px;
     border-radius: 2px;
     position: relative;
@@ -115,17 +120,31 @@
 .progress-bar::after {
     content: '';
     position: absolute;
-    width: 40%;
+    width: 50%;
     height: 100%;
-    background-color: #3b82f6;
+    background-color: #3b7040;
 }
+.volume-slider{
+    width: 100px;
+    height: 4px;
+    background-color: #545557;
+    margin-top: 10px;
+    border-radius: 2px;
+    position: relative;
+}
+
+.volume-slider::after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 4px;
+    background-color: #538358;
+}
+
 h4 a{
     color: #2f7445;
     justify-content: space-between;
 }
-.hola{
-    color: #eeeeee;
-}
-.global-header{
-    background-color: #111214;
+.player-controls{
+    justify-items: center;
 }
