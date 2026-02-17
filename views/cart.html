@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/cart.css">
+</head>
+<body>
+    <div class="app-container">
+    <main class="cart-checkout-view">
+        <header class="view-header">
+            <a href="../index.html" class="back-link">← Back to Store</a>
+            <h1>Secure Checkout</h1>
+        </header>
+
+        <div class="checkout-grid">
+            <section class="forms-column">
+                <div class="checkout-card">
+                    <h3>Payment Method</h3>
+                    <div class="payment-selection">
+                        <label class="payment-option active">
+                            <input type="radio" name="pay" checked> Credit Card 💳
+                        </label>
+                    </div>
+                    
+                    <form class="payment-form">
+                        <div class="input-group">
+                            <label>Card Number</label>
+                            <input type="text" placeholder="0000 0000 0000 0000">
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Expiration (MM/YY)</label>
+                                <input type="text" placeholder="MM/YY">
+                            </div>
+                            <div class="input-group">
+                                <label>CVC</label>
+                                <input type="password" placeholder="123">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="checkout-card">
+                    <h3>Billing Address</h3>
+                    <form class="address-form">
+                        <div class="input-group">
+                            <label>Street Address</label>
+                            <input type="text" placeholder="123 Music Lane">
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>City</label>
+                                <input type="text" placeholder="Guatemala City">
+                            </div>
+                            <div class="input-group">
+                                <label>Postal Code</label>
+                                <input type="text" placeholder="01001">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <aside class="order-summary-sidebar">
+                <div class="summary-card">
+                    <h3>Order Summary</h3>
+                    <div class="cart-items">
+                        <div class="summary-item">
+                            <img src="Assets/img/homerun.jpeg" alt="homerun">
+                            <div class="item-info">
+                                <p><strong>Homerun</strong></p>
+                                <small>Paulo Londra</small>
+                            </div>
+                            <span class="price">Q100.00</span>
+                        </div>
+                    </div>
+
+                    <div class="totals-section">
+                        <div class="total-row"><span>Subtotal</span><span>Q100.00</span></div>
+                        <div class="total-row"><span>Estimated Tax</span><span>Q12.00</span></div>
+                        <div class="total-row grand-total">
+                            <span>Total</span><span>Q112.00</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-place-order">Place Order & Pay Q112.00 🔒</button>
+                    <p class="terms-text">By placing this order, you agree to our Terms of Service.</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+</div>
+</body>
+</html>

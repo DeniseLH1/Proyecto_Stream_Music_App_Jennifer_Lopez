@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/success.css">
+</head>
+<body>
+    <div class="app-container">
+    <header class="header-global">
+        <div class="header-left">
+            <h1 class="logo">MusicStream</h1>
+        </div>
+        <div class="header-right">
+            <img src="Assets/icons/perfil.png" class="profile-icon">
+        </div>
+    </header>
+
+    <main class="success-view">
+        <div class="success-card">
+            <div class="success-icon">✓</div>
+            
+            <h1>Purchase Successful!</h1>
+            <p class="success-msg">
+                Thank you for your purchase. A confirmation email has been sent to your registered address. 
+                You can now find your new music in your library.
+            </p>
+
+            <div class="order-receipt">
+                <h3>Order Summary</h3>
+                <div class="receipt-item">
+                    <img src="Assets/img/homerun.jpeg" alt="homerun">
+                    <div class="receipt-text">
+                        <p><strong>Homerun</strong></p>
+                        <small>Paulo Londra</small>
+                    </div>
+                    <span class="receipt-price">Q100.00</span>
+                </div>
+                
+                <div class="receipt-totals">
+                    <div class="r-row"><span>Total:</span><span>Q112.00</span></div>
+                    <div class="r-row"><small>Order ID:</small><small>#ABC-123-XYZ-456</small></div>
+                </div>
+            </div>
+
+            <div class="success-actions">
+                <button class="btn-secondary">View Order History</button>
+                <button class="btn-primary" onclick="window.location.href='index.html'">Return to Store</button>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>
