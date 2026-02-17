@@ -1,0 +1,124 @@
+/* Contenedor Principal con Grid */
+.album-detail-view {
+    background-color: #0f172a;
+    color: white;
+    padding: 40px;
+    min-height: 100vh;
+    padding-bottom: 100px; /* Espacio para la barra del reproductor */
+}
+
+.album-hero {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 50px;
+}
+
+/* Columna Izquierda: Arte y Botones */
+.main-cover {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.album-meta h1 {
+    font-size: 2.5rem;
+    margin: 20px 0 5px 0;
+}
+
+.album-meta p {
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+.btn-buy {
+    width: 100%;
+    background-color: #3b82f6; /* Azul Eléctrico */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.secondary-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-icon {
+    flex: 1;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Columna Derecha: Tracklist */
+.tracklist-container {
+    margin-top: 20px;
+    background-color: rgba(30, 41, 59, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.track-header, .track-row {
+    display: grid;
+    grid-template-columns: 40px 1fr 1fr 80px;
+    padding: 12px 20px;
+    border-bottom: 1px solid #334155;
+    font-size: 0.9rem;
+}
+
+.track-header {
+    color: #64748b;
+    font-weight: bold;
+}
+
+.track-row:hover {
+    background-color: #334155;
+    cursor: pointer;
+}
+
+.t-title {
+    font-weight: bold;
+}
+
+/* Barra de Reproducción Inferior */
+.player-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #1e293b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-top: 1px solid #334155;
+    z-index: 100;
+}
+
+.progress-bar {
+    width: 300px;
+    height: 4px;
+    background-color: #334155;
+    margin-top: 10px;
+    border-radius: 2px;
+    position: relative;
+}
+
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    background-color: #3b82f6;
+}
+a,h4{
+    color: #2f7445;
+}

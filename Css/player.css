@@ -1,0 +1,111 @@
+.player-focus-view {
+    background-color: #0b1120; /* Un azul casi negro más profundo */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    overflow: hidden;
+}
+
+.player-main-content {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 40px;
+    padding: 60px;
+    flex-grow: 1;
+    align-items: center;
+}
+
+/* El efecto Glow de la imagen */
+.glow-container {
+    position: relative;
+    width: 450px;
+    margin: 0 auto;
+}
+
+.main-art {
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.glow-container::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: inherit;
+    background-image: url('../Assets/img/homerun.jpeg'); /* Misma imagen de fondo */
+    background-size: cover;
+    filter: blur(60px); /* Desenfoque fuerte para el efecto luz */
+    opacity: 0.6;
+    z-index: 1;
+    transform: scale(1.1);
+}
+
+.track-info-large {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.track-info-large h1 { font-size: 2.5rem; }
+.track-info-large h2 { color: #3b82f6; }
+
+/* Panel Lateral Up Next */
+.up-next-panel {
+    background-color: rgba(30, 41, 59, 0.4);
+    border-radius: 20px;
+    padding: 20px;
+    height: 500px;
+}
+
+.queue-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.queue-item:hover { background: rgba(255,255,255,0.05); }
+
+.queue-item img { width: 50px; height: 50px; border-radius: 5px; }
+
+/* Barra de Controles Inferior */
+.master-controls {
+    height: 100px;
+    background: rgba(15, 23, 42, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    border-top: 1px solid #1e293b;
+}
+
+.play-main {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #3b82f6;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.progress-bar-container {
+    width: 400px;
+    height: 6px;
+    background: #1e293b;
+    border-radius: 3px;
+    margin: 0 15px;
+}
+
+.progress-fill {
+    width: 35%;
+    height: 100%;
+    background: #3b82f6;
+    border-radius: 3px;
+}
