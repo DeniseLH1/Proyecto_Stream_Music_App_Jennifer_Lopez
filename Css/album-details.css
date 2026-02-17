@@ -26,13 +26,13 @@
 }
 
 .album-meta p {
-    color: #94a3b8;
+    color: #a6b0be;
     margin-bottom: 30px;
 }
 
 .btn-buy {
     width: 100%;
-    background-color: #3b82f6; /* Azul Eléctrico */
+    background-color: #398043; /* Azul Eléctrico */
     color: white;
     padding: 15px;
     border: none;
@@ -50,7 +50,7 @@
 .btn-icon {
     flex: 1;
     background-color: #1e293b;
-    border: 1px solid #334155;
+    border: 1px solid #4b4b4b;
     color: white;
     padding: 10px;
     border-radius: 20px;
@@ -60,7 +60,7 @@
 /* Columna Derecha: Tracklist */
 .tracklist-container {
     margin-top: 20px;
-    background-color: rgba(30, 41, 59, 0.5);
+    background-color: rgba(44, 45, 46, 0.5);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -69,7 +69,7 @@
     display: grid;
     grid-template-columns: 40px 1fr 1fr 80px;
     padding: 12px 20px;
-    border-bottom: 1px solid #334155;
+    border-bottom: 1px solid #3c3f42;
     font-size: 0.9rem;
 }
 
@@ -94,7 +94,7 @@
     left: 0;
     width: 100%;
     height: 80px;
-    background-color: #1e293b;
+    background-color: #2b3546;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -119,6 +119,13 @@
     height: 100%;
     background-color: #3b82f6;
 }
-a,h4{
+h4 a{
     color: #2f7445;
+    justify-content: space-between;
+}
+.hola{
+    color: #eeeeee;
+}
+.global-header{
+    background-color: #111214;
 }
