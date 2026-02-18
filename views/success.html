@@ -18,57 +18,71 @@
     <link rel="stylesheet" href="../Css/main.css">
 </head>
 <body>
-    <!-- -------------------Link de arriba------------------ -->
-     <header class="global-header ">
+    <header class="global-header ">
         <div class="opciones">
             <img src="../Assets/icons/Logo.png" alt="MusicStream Logo" width="50px">
             <span>MusicStream</span>
-            <nav class="menus">
-     <a href="../index.html" class="back-link">← Back to Store</a>
+            <nav class="menu">
+                <a href="index.html" class="active">Discover</a>
+                <a href="#">Library</a>
+                <a href="index.html">Store</a>
             </nav>
-    </div> 
-</header>
-    <main class="success-view">
-        <div class="success-card">
-            <div class="success-icon">✓</div>
-            
-            <h1>Purchase Successful!</h1>
-            <p class="success-msg">
-                Thank you for your purchase. A confirmation email has been sent to your registered address. 
-                You can now find your new music in your library.
-            </p>
+  <form class="search-bar">
+        <input type="text" placeholder="Artists, albums, tracks" class="search-bar">
+        </form>
+        <img src="../Assets/icons/nueva-cuenta.png" width="30px" height="30px">
+    </div> </header>
 
-            <div class="order-receipt">
-                <h3>Order Summary</h3>
-                <div class="receipt-item">
-                    <img src="../Assets/img/homerun.jpeg" alt="homerun">
-                    <div class="receipt-text">
-                        <p><strong>Homerun</strong></p>
-                        <small>Paulo Londra</small>
+    <div class="main-container">
+        <aside class="sidebar">
+            <p class="sidebar-title">MY MUSIC</p>
+            <nav class="sidebar-nav">
+                <a href="#"><span class="icon">🕒</span> Recently Purchased</a>
+                <a href="#"><span class="icon">💿</span> My Albums</a>
+                <a href="#"><span class="icon">❤️</span> Liked Songs</a>
+            </nav>
+        </aside>
+
+        <main class="success-view">
+            <div class="success-card">
+                <div class="success-icon">✓</div>
+                <h1>Purchase Successful!</h1>
+                <p class="success-msg">
+                    Thank you for your purchase. A confirmation email has been sent to your registered address. 
+                    You can now find your new music in your library.
+                </p>
+
+                <div class="order-receipt">
+                    <h3>Order Summary</h3>
+                    <div class="receipt-item">
+                        <img src="../Assets/img/homerun.jpeg" alt="homerun">
+                        <div class="receipt-text">
+                            <p><strong>Homerun</strong></p>
+                            <small>Paulo Londra</small>
+                        </div>
+                        <span class="receipt-price">Q100.00</span>
                     </div>
-                    <span class="receipt-price">Q100.00</span>
-                </div>
-                 <div class="receipt-item">
-                    <img src="../Assets/img/recovery.jpeg" >
-                    <div class="receipt-text">
-                        <p><strong>Recovery</strong></p>
-                        <small>Eminem</small>
+                    
+                    <div class="receipt-item">
+                        <img src="../Assets/img/recovery.jpeg" >
+                        <div class="receipt-text">
+                            <p><strong>Recovery</strong></p>
+                            <small>Eminem</small>
+                        </div>
+                        <span class="receipt-price">Q100.00</span>
                     </div>
-                    <span class="receipt-price">Q100.00</span>
+                    <div class="receipt-totals">
+                        <div class="r-row"><span>Total:</span><span>Q212.00</span></div>
+                        <div class="r-row"><small>Order ID:</small><small>#ABC-123-XYZ-456</small></div>
+                    </div>
                 </div>
-                
-                <div class="receipt-totals">
-                    <div class="r-row"><span>Total:</span><span>Q212.00</span></div>
-                    <div class="r-row"><small>Order ID:</small><small>#ABC-123-XYZ-456</small></div>
+
+                <div class="success-actions">
+                    <button class="btn-secondary">View Order History</button>
+                    <button class="btn-primary" onclick="window.location.href='../index.html'">Return to Store</button>
                 </div>
             </div>
-
-            <div class="success-actions">
-                <button class="btn-secondary">View Order History</button>
-                <button class="btn-primary" onclick="window.location.href='../index.html'">Return to Store</button>
-            </div>
-        </div>
-    </main>
-</div>
+        </main>
+    </div>
 </body>
 </html>
