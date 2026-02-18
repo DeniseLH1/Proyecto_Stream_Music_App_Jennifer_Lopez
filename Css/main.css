@@ -68,7 +68,7 @@ body {
         padding: 30px;
         max-width: 100%;
         text-align: right;
-        background-image: linear-gradient( rgba(0,0,0,0.3)),url('../Assets/icons/Fond.avif') ;
+        background-image: linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../Assets/icons/Fond.png');
         background-size: cover;
         color: #ffffff;
         font-size: 20px;
@@ -86,7 +86,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
 }
 .card {
-    background: rgba(255, 255, 255, 0.857);
+    background: rgba(214, 212, 201, 0.857);
     padding: 70px;
     width: 50%;
     height: 50%;
@@ -147,4 +147,7 @@ body {
 }
 .soul{
     color: #4f3b3b;
+}
+a{
+    color: #707070;
 }
