@@ -36,7 +36,8 @@
             </nav>
     </div> </header>
 <!-- ---------cuadro de texto antes de la imagen e info--------->
-    <h4><a href="../index.html">Home </a>/Artis /
+    <h4><a href="../index.html">Home </a>/
+        <a href="../views/artist.html">Artist</a>  /
     <a href="../views/album-detail.html">Cosmic Echoes</a></h4>
 
 <!-- ------------Info del album------------------------------ -->
@@ -172,29 +173,29 @@
 </section>
 </main>
 <!-- -----------------Notones de musica--------------- -->
-    <footer class="player-bar">
-        <div class="current-track">
-             <div class="mini-cover"></div>
-             <div><br>
-                <img src="../Assets/img/homerun.jpeg" width="90px"height="90px">
-             </div>
+   <footer class="player-bar">
+    <div class="current-track">
+        <img src="../Assets/img/homerun.jpeg"  width="30%" height="30%">
+    </div>
+ <div class="track-text">
+               <p >Adán y Eva</p>
+                <small >Paulo Londra</small>
+           </div>
+    <div class="player-controls">
+        <div class="buttons-group">
+            <img src="../Assets/icons/dar-un-paso-atras.png" class="control-icon" >
+            <audio controls class="custom-audio-player">
+                <source src="../Assets/sounds/Adan y Eva.mp3">
+            </audio>
+            <img src="../Assets/icons/dar-un-paso-adelante.png" class="control-icon" >
         </div>
-        <div class="player-controls">
-            <span>
-                <img src="../Assets/icons/dar-un-paso-atras.png" width="23px" height="24px">
-                <img src="../Assets/icons/circulo-de-pausa.png" width="30PX">
-                <img src="../Assets/icons/dar-un-paso-adelante.png" width="23px" height="24px">
-            </span>
-            <div class="progress-bar"></div>
-            <p>Adán y Eva</p>
-            <small><small>Paulo Londra</small></small>
-        </div>
-        <div class="volume-controls">
-            <span>🔊</span>
-            <div class="volume-slider"></div>
-           
-        </div>
-    </footer>
+    </div>
+
+    <div class="volume-controls">
+        <span>🔊</span>
+        <input type="range" class="volume-range" min="0" max="100" value="70">
+    </div>
+</footer>
 </div>
 </body>
 </html>
