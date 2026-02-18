@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina principal Music Stream">
+    <meta name="description" content="HTML,css, pagina web, Music Stream">
+    <meta name="description" content="Denise López">
+    <meta name="description" content="Music Stream HTML">
+    <meta name="generator" content="VScode">
+    <link rel="icon" type="image/png" href="/Assets/icons/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/Assets/icons/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/Assets/icons/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/Assets/icons/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/Assets/icons/favicon/site.webmanifest" />
+    <title>Homerun</title>
+    <link rel="stylesheet" href="../Css/payment.css">
+    <link rel="stylesheet" href="../Css/main.css">
+</head>
+<body>
+    <!-- -------------------Link de arriba------------------ -->
+     <header class="global-header ">
+        <div class="opciones">
+            <img src="../Assets/icons/Logo.png" alt="MusicStream Logo" width="50px">
+            <span>MusicStream</span>
+            <nav class="menus">
+     <a href="../index.html" class="back-link">← Back to Store</a>
+            </nav>
+    </div> 
+</header>
+    <div class="app-container">
+    <main class="cart-checkout-view">
+        <header class="view-header">
+             <h4><a href="../views/cart.html">Cart </a>/
+        <a href="../views/payment.html">Payment</a>  /
+    <a href="../views/success.html">Complement</a></h4>
+            <h1>Secure Checkout</h1>
+        </header>
+
+        <div class="checkout-grid">
+            <section class="forms-column">
+                <div class="checkout-card">
+                    <h3>Pay with Credit Card
+                        <img src="../Assets/icons/visa.png">
+                        <img src="../Assets/icons/mastercad.png">
+                        <img src="../Assets/icons/american-express.png" >
+                    </h3>
+                    
+                    <form class="payment-form">
+                        <div class="input-group">
+                            <label>Card Number</label>
+                            <input type="text" placeholder="0000 0000 0000 0000">
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Expiration (MM/YY)</label>
+                                <input type="text" placeholder="MM/YY">
+                            </div>
+                            <div class="input-group">
+                                <label>CVC</label>
+                                <input type="password" placeholder="123">
+                            </div>
+                             <div class="input-group">
+                            <label>Name on Card</label>
+                            <input type="text" placeholder="John Doe">
+                        </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="checkout-card">
+                    <h3>Billing Address</h3>
+                    <form class="address-form">
+                        <div class="input-group">
+                            <label>Country/Region</label>
+                            <input type="text" id="region" name="region" list="region-list" placeholder="Select your country">
+                            <datalist id="region-list">
+                            <option value="Guatemala">
+                            <option value="Mexico">
+                            <option value="Estados Unidos">
+                             </datalist>
+                        </div>
+                        <div class="input-group">
+                            <label>Street Address</label>
+                            <input type="text" placeholder="123 Music Lane">
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>City</label>
+                                <input type="text" placeholder="Guatemala City">
+                            </div>
+                            <div class="input-group">
+                                <label>Postal Code</label>
+                                <input type="text" placeholder="01001">
+                            </div>
+                              <div class="input-group">
+                            <label>Postal Code</label>
+                            <input type="text" placeholder="37203">
+                        </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <aside class="order-summary-sidebar">
+                <div class="summary-card">
+                    <h3>Order Summary</h3>
+                    <div class="cart-items">
+                        <div class="summary-item">
+                            <img src="../Assets/img/homerun.jpeg" alt="homerun">
+                            <div class="item-info">
+                                <p><strong>Homerun</strong></p>
+                                <small>Paulo Londra</small>
+                            </div>
+                            <span class="price">Q100.00</span>
+                        </div>
+                    </div>
+                     <div class="cart-items">
+                        <div class="summary-item">
+                            <img src="../Assets/img/recovery.jpeg" alt="recovery">
+                            <div class="item-info">
+                                <p><strong>Recovery</strong></p>
+                                <small>Eminem</small>
+                            </div>
+                            <span class="price">Q100.00</span>
+                        </div>
+                    </div>
+
+                    <div class="totals-section">
+                        <div class="total-row"><span>Subtotal</span><span>Q200.00</span></div>
+                        <div class="total-row"><span>Estimated Tax</span><span>Q12.00</span></div>
+                        <div class="total-row grand-total">
+                            <span>Total</span><span>Q212.00</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-place-order"><a href="../views/success.html">Place Order & Pay Q112.00 🔒</a></button>
+                    <p class="terms-text">By placing this order, you agree to our Terms of Service.</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+</div>
+</body>
+</html>

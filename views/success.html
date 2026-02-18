@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Pagina principal Music Stream">
+    <meta name="description" content="HTML,css, pagina web, Music Stream">
+    <meta name="description" content="Denise López">
+    <meta name="description" content="Music Stream HTML">
+    <meta name="generator" content="VScode">
+    <link rel="icon" type="image/png" href="/Assets/icons/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/Assets/icons/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/Assets/icons/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/Assets/icons/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/Assets/icons/favicon/site.webmanifest" />
+    <title>Homerun</title>
     <link rel="stylesheet" href="../Css/success.css">
+    <link rel="stylesheet" href="../Css/main.css">
 </head>
 <body>
-    <div class="app-container">
-    <header class="header-global">
-        <div class="header-left">
-            <h1 class="logo">MusicStream</h1>
-        </div>
-        <div class="header-right">
-            <img src="Assets/icons/perfil.png" class="profile-icon">
-        </div>
-    </header>
-
+    <!-- -------------------Link de arriba------------------ -->
+     <header class="global-header ">
+        <div class="opciones">
+            <img src="../Assets/icons/Logo.png" alt="MusicStream Logo" width="50px">
+            <span>MusicStream</span>
+            <nav class="menus">
+     <a href="../index.html" class="back-link">← Back to Store</a>
+            </nav>
+    </div> 
+</header>
     <main class="success-view">
         <div class="success-card">
             <div class="success-icon">✓</div>
@@ -30,23 +41,31 @@
             <div class="order-receipt">
                 <h3>Order Summary</h3>
                 <div class="receipt-item">
-                    <img src="Assets/img/homerun.jpeg" alt="homerun">
+                    <img src="../Assets/img/homerun.jpeg" alt="homerun">
                     <div class="receipt-text">
                         <p><strong>Homerun</strong></p>
                         <small>Paulo Londra</small>
                     </div>
                     <span class="receipt-price">Q100.00</span>
                 </div>
+                 <div class="receipt-item">
+                    <img src="../Assets/img/recovery.jpeg" >
+                    <div class="receipt-text">
+                        <p><strong>Recovery</strong></p>
+                        <small>Eminem</small>
+                    </div>
+                    <span class="receipt-price">Q100.00</span>
+                </div>
                 
                 <div class="receipt-totals">
-                    <div class="r-row"><span>Total:</span><span>Q112.00</span></div>
+                    <div class="r-row"><span>Total:</span><span>Q212.00</span></div>
                     <div class="r-row"><small>Order ID:</small><small>#ABC-123-XYZ-456</small></div>
                 </div>
             </div>
 
             <div class="success-actions">
                 <button class="btn-secondary">View Order History</button>
-                <button class="btn-primary" onclick="window.location.href='index.html'">Return to Store</button>
+                <button class="btn-primary" onclick="window.location.href='../index.html'">Return to Store</button>
             </div>
         </div>
     </main>
