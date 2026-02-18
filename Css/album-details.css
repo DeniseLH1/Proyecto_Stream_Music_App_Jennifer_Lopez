@@ -167,8 +167,9 @@
 
 /* Barra de volumen interactiva */
 .volume-range {
+   height: 5px;
     cursor: pointer;
-    accent-color: #3b82f6; /* Color azul del control */
+    accent-color: #286d2b; /* Color azul del control */
 }
 .track-text {
     margin-left: 15px;
