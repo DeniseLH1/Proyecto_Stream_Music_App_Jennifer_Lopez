@@ -1,16 +1,18 @@
 /* 1. Variables Globales */
 :root {
-    --bg-dark: #276734;
+    --bg-dark: #2a8b3d;
+    --bg-card:#1f3d2a;
     --bg-sidebar: #1d311d;
     --accent-blue: #3b82f6;
     --text-main: #f8fafc;
     --text-dim: #0fadb5;
-    --card-bg: #478451db;
+    --card-bg: #4d724fdb;
+    --fond-dark: #000000db;
 }
 
 /* 2. Estilos Generales */
 body {
-    background-image: radial-gradient(var(--bg-dark),var(--bg-sidebar));
+    background-image: radial-gradient(var(--bg-dark),var(--fond-dark));
     color: var(--text-main);
     line-height: 1.6;
     margin: 0;
@@ -122,52 +124,54 @@ body {
 /* Cuadrícula de Álbumes Responsive */
 .albums {
     display: grid;
-    /* Ajusta automáticamente el número de columnas según el espacio */
     grid-template-columns: repeat(auto-fill, minmax(200px, 3fr));
     gap: 20px;
+    padding: 20px;
 }
 
 /* Diseño de la Tarjeta */
 .card {
-    background: radial-gradient(var(--card-bg),var(--bg-dark));
-    padding: 20px;
-    border-radius: 12px;
-    border-left: 5px solid;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    background: radial-gradient(var(--card-bg),var(--bg-card));
+    padding: 16px;
+    border-radius: 8px;
     transition: transform 0.3s ease;
-    color: #1c1d1d; /* Texto oscuro para que resalte sobre el fondo claro de la card */
     text-align: center;
+   text-align: left;
+   height: 90%;
 }
 
 .card:hover {
     transform: translateY(-8px);
-    cursor: pointer;
+    background-image: linear-gradient(rgb(37, 83, 76), rgb(31, 133, 133));
 }
 
 .imagen {
-    width: 100% !important;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    width: 100%;
+    aspect-ratio: 1 /1;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
 }
 
 .precio {
-    font-size: 18px;
-    background-color: #bec9b2;
-    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #1c421b;
+    border-radius: 6px;
     padding: 5px;
-    margin-top: 10px;
+    margin-top: auto;
     display: inline-block;
-    width: 80%;
+    align-self: center;
+    text-align: center;
+    width: 90%;
 }
-
-/* Colores por álbum */
-.homerun { border-color: #db1111; }
-.Back { border-color: #707070; }
-.versus { border-color: #2a4b80; }
-.visualizate { border-color: #19191a; }
-.divide { border-color: #0946a8; }
-.disco { border-color: #c59e04; }
-.show { border-color: #c21520; }
-.recovery { border-color: #497e62; }
-.soul { border-color: #4f3b3b; }
+.info h2,p,precio{
+    color: #ffffff;
+    font-size: 1 rem;
+    font-weight: 400;
+    margin: 0 0 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+a{ text-decoration: none;}
