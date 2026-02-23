@@ -1,18 +1,18 @@
 /* 1. Variables Globales */
 :root {
-    --bg-dark: #2a8b3d;
+    --bg-dark: #398a49d4;
     --bg-card:#1f3d2a;
     --bg-sidebar: #1d311d;
     --accent-blue: #3b82f6;
     --text-main: #f8fafc;
     --text-dim: #0fadb5;
     --card-bg: #4d724fdb;
-    --fond-dark: #000000db;
+    --fond-dark: #1e492d;
 }
 
 /* 2. Estilos Generales */
 body {
-    background-image: radial-gradient(var(--bg-dark),var(--fond-dark));
+    background-image: linear-gradient(to right,var(--fond-dark),var(--bg-dark),var(--fond-dark));
     color: var(--text-main);
     line-height: 1.6;
     margin: 0;
